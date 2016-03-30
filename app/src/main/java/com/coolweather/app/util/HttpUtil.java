@@ -26,6 +26,7 @@ public class HttpUtil {
                     while ((line = reader.readLine()) != null) {
                         response.append(line);
                     }
+                    System.out.print(response);
                     if (listener != null) {
                         listener.onFinish(response.toString());
                     }
